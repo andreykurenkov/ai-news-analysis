@@ -1,0 +1,1 @@
+python3 scripts/train_lm.py --train_dir lm_data/summaries/ --output_dir trained_lm_summaries --model_name_or_path gpt2 --overwrite_cache  --num_train_epochs 500.0 --do_train --per_device_train_batch_size 2 --gradient_accumulation_steps 8

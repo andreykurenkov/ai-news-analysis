@@ -185,8 +185,6 @@ def main():
             "You can do it from another script, save it, and load it from here, using --tokenizer_name."
         )
 
-    special_tokens_dict = {'additional_special_tokens': ['<|startoftext|>']}
-    tokenizer.add_special_tokens(special_tokens_dict)
     if model_args.model_name_or_path:
         model = AutoModelForCausalLM.from_pretrained(
             model_args.model_name_or_path,
