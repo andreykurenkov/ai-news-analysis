@@ -169,7 +169,7 @@ def main():
     )
 
     parser.add_argument("--prompt", type=str, default="")
-    parser.add_argument("--length", type=int, default=20)
+    parser.add_argument("--length", type=int, default=500)
     parser.add_argument("--stop_token", type=str, default=None, help="Token at which text generation is stopped")
 
     parser.add_argument(
