@@ -169,7 +169,7 @@ def main():
     )
 
     parser.add_argument("--prompt", type=str, default="")
-    parser.add_argument("--length", type=int, default=500)
+    parser.add_argument("--length", type=int, default=250)
     parser.add_argument("--stop_token", type=str, default=None, help="Token at which text generation is stopped")
 
     parser.add_argument(
@@ -286,6 +286,7 @@ def main():
         )
 
         generated_sequences.append(total_sequence)
+        total_sequence = total_sequence.replace("Join us for the world’s leading event about accelerating enterprise transformation with AI and Data, for enterprise technology decision-makers, presented by the #1 publisher in AI and Data", "")
         print(total_sequence)
 
     return generated_sequences
